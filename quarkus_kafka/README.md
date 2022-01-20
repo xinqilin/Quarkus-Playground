@@ -5,7 +5,10 @@
 
 ```zsh
 
-	docker-compose down && docker-compose up -d --build
+   docker-compose down && docker-compose up -d --build
+   
+   //make sure have k6
+   // brew install k6
 
 ```
 
