@@ -1,7 +1,7 @@
 import http from 'k6/http';
 import {check, sleep} from 'k6';
 
-const incomePayload = JSON.parse(open("../deposit.json"));
+const incomePayload = JSON.parse(open("./deposit.json"));
 
 export default function() {
   const url = 'http://localhost:8080/transactions';
