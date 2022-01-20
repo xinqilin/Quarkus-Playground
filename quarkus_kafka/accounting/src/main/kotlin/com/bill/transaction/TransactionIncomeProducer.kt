@@ -13,7 +13,7 @@ import javax.enterprise.inject.Produces
 
 @ApplicationScoped
 class TransactionIncomeProducer(
-    private val balances: Balances
+    private val accountingService: AccountingService
 ) {
 
     private val log = Logger.getLogger("TransactionIncomeProducer")
@@ -27,7 +27,7 @@ class TransactionIncomeProducer(
             .foreach { _, value: JsonObject ->
                 val transaction = Transaction.ofMap(value.map)
                 log.info("Receiving transaction with description ${transaction.description}")
-                balances.recalculate(transaction)
+                accountingService.recalculate(transaction)
             }
         return builder.build()
     }
