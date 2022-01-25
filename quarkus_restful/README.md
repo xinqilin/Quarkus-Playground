@@ -55,4 +55,6 @@ https://quarkus.io/guides/openapi-swaggerui
     quarkus.smallrye-openapi.info-license-name=Apache 2.0
     quarkus.smallrye-openapi.info-license-url=https://www.apache.org/licenses/LICENSE-2.0.html
 ```
+### Log
+
 
