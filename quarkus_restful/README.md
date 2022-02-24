@@ -55,6 +55,12 @@ https://quarkus.io/guides/openapi-swaggerui
     quarkus.smallrye-openapi.info-license-name=Apache 2.0
     quarkus.smallrye-openapi.info-license-url=https://www.apache.org/licenses/LICENSE-2.0.html
 ```
-### Log
+###  POSTGRES
+
+```zsh
+    docker run -d --name my-postgres -p 5432:5432 -e POSTGRES_PASSWORD=admin postgres
+    docker exec -it my-postgres psql -U postgres
+    exit -> \q
+```
 
 
