@@ -12,6 +12,13 @@
 
 ```
 
+### Run with k6
+
+```zsh
+    k6 run ./deposit.js
+    k6 run ./withdraw.js
+```
+
 
 
 
